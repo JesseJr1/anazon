@@ -13,7 +13,7 @@ class UserFixtures extends Fixture
         $user = new User();
         $user->setEmail('admin@admin.com');
         $user->setRoles(['ROLE_ADMIN']);
-        $user->plainPassword = 'demo';
+        $user->setPlainPassword('toto');
         // $user->setPassword('$2y$13$oITgY562c1jP9EGudtMtpucjZSEswSH2ORDVxKFOeop28ZT37wZsm'); // demo
         $manager->persist($user);
         
